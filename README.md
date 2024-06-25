@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Indian Agriculture Analytics
+This project is a data analysis task for Manufac Analytics Private Limited. The goal is to analyze the Indian Agriculture dataset and display the results as tables using React and Mantine v7.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project Setup and Running Instructions
+ Prerequisites : Ensure you have the following installed on your system:
+ 1) Node.js (>= 14.x)
+ 2) Yarn (>= 1.22.x)
 
-## Available Scripts
+# Instructions
+1) Clone the repository:
+   git clone https://github.com/yourusername/indian-agriculture-analytics.git
+   cd indian-agriculture-analytics
+   
+2) Install the project dependencies using Yarn:
+   yarn install
+  
+# Running the Project
+  To start the development server and view the application in your browser, run:
+  yarn start
 
-In the project directory, you can run:
+  This command will start the application and automatically open your default web browser with the application running on http://localhost:3000.
+  
+# Project Structure
+1)   public/: Contains public assets such as the dataset (agriculturalDataset.csv).
+2)   src/: Contains the source code for the React application.
+    i) components/: Contains React components used in the project.
+    ii) App.js: Main component rendering the tables.
+    iii) index.js: Entry point of the application.
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Analysis and Tables
+The application displays two tables based on the provided dataset:
+1) Yearly Crop Production Table: Displays the crop with maximum and minimum production for each year from 1950 to 2020.
+2) Crop Average Yield and Cultivation Area Table: Displays the average yield and average cultivation area for each crop between 1950 and 2020. Average values are rounded off 
+   to 3 decimal places.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Data Handling
+1) All missing cell values in the dataset are treated as 0.
+2) The calculations and aggregations are performed within the application, ensuring efficient and accurate data processing.
