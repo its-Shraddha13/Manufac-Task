@@ -37,3 +37,12 @@ The application displays two tables based on the provided dataset:
 # Data Handling
 1) All missing cell values in the dataset are treated as 0.
 2) The calculations and aggregations are performed within the application, ensuring efficient and accurate data processing.
+
+# Screenshots
+1) Yearly Crop Production Table
+2) Crop Average Yield and Cultivation Area Table
+
+# Additional Information
+1) No external libraries (such as Bootstrap, jQuery, Lodash, etc.) are used in this project.
+2) The project is built using React via CRA and Mantine v7 for table components.
+3) All unused code and libraries from the CRA template have been removed to reduce clutter.
